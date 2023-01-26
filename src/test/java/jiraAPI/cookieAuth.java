@@ -8,7 +8,9 @@ import io.restassured.RestAssured;
 import io.restassured.filter.session.SessionFilter;
 
 public class cookieAuth {
-
+	
+//https://developer.atlassian.com/server/jira/platform/security-overview/
+	
 	public static SessionFilter session ;
 	
 	@Test

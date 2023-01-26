@@ -11,7 +11,7 @@ public class createIssue {
 	public static String issue_id;
 	
 	@Test
-	public static String issueCreation() {
+	public static void issueCreation() {
 		
 		 RestAssured.baseURI = "http://localhost:8081";
 		
@@ -21,8 +21,8 @@ public class createIssue {
 		 		+ "        \"project\": {\r\n"
 		 		+ "            \"key\": \"RES\"\r\n"
 		 		+ "        },\r\n"
-		 		+ "        \"summary\": \" stAssured \",\r\n"
-		 		+ "        \"description\": \"sample Rest assured issue\",\r\n"
+		 		+ "        \"summary\": \" Mathu REst API issue \",\r\n"
+		 		+ "        \"description\": \"Mathu rest assured issues\",\r\n"
 		 		+ "        \"issuetype\": {\r\n"
 		 		+ "            \"name\": \"Bug\"\r\n"
 		 		+ "        }\r\n"
@@ -39,7 +39,7 @@ public class createIssue {
 		System.out.println(issue_id);
 		System.out.println("-------------------------------------------------------------------------");
 
-		return issue_id;
+		//return issue_id;
 		
 	}
 	

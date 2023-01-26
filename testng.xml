@@ -5,8 +5,10 @@
     <classes>
       <class name="jiraAPI.cookieAuth"/>
       <class name="jiraAPI.createIssue"/>
-	<class name="jiraAPI.getIssue"/>
-<class name="jiraAPI.editIssue"/>
+	<class name="jiraAPI.editIssue"/>
+<class name="jiraAPI.getIssue"/>
+	<!--class name="jiraAPI.deleteIssue"/-->
+	<class name="jiraAPI.attachment"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
