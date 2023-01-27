@@ -1,4 +1,4 @@
-package Authentication;
+package Deserialization_Authentication;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -23,7 +23,9 @@ import io.restassured.path.json.JsonPath;
 
 public class oAuth_AuthorizationCode {
 
-	public static void main(String[] args) {
+	public static String accessToken;
+	
+	public static String main(String[] args) {
 		//OAuth 2.0 Authorization: 
 		//Grant types are "Authorization code, Client credentials, password credentials, etc.."
 		//Authorization code ==> if human/user involves between two apps (ie. bookmyshow -> gooogle sign in -> bookmyshow)
@@ -49,7 +51,7 @@ public class oAuth_AuthorizationCode {
 		*/
 		
 		//To get code from Auth URL	
-		String url = "https://rahulshettyacademy.com/getCourse.php?code=4%2F0AWtgzh4tZQ27DO0NLfBvOUuV5sBInv0sFfk2rAal_OilYzkKyBJDM2QbNahz-VZJYfHaZg&scope=email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none";
+		String url = "https://rahulshettyacademy.com/getCourse.php?code=4%2F0AWtgzh4eZV_xoIqe9s0hwAeeUEfpvzhVsC3p-7dmiPfglNqebBB6EPTiexiDLVJGJ9VDMg&scope=email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none";
 		System.out.println(url);		
 		String partialurl = url.split("code=")[1];
 		String code = partialurl.split("scope=")[0];
@@ -68,6 +70,8 @@ public class oAuth_AuthorizationCode {
 		JsonPath js = new JsonPath(response);
 		String accessToken = js.get("access_token");
 		System.out.println(accessToken);
+		return accessToken;
+		
 		/*
 		//To get courses list using OAuth 2.0 through grant type as "Authorization code"
 		String coursesList = given().log().all().queryParam("access_token", accessToken)
@@ -75,45 +79,10 @@ public class oAuth_AuthorizationCode {
 		.then().log().all().statusCode(200).extract().asString();
 		
 		System.out.println(coursesList);
-		
 		*/
 		
-		//To get the courses list using POJO classes
 		
-		getCoursePOJO gc = given().queryParam("access_token", accessToken).expect().defaultParser(Parser.JSON)
-		.when().get("https://rahulshettyacademy.com/getCourse.php")
-		.as(getCoursePOJO.class);
-		
-		System.out.println(gc.getInstructor());
-		System.out.println(gc.getLinkedIn());
-		int autoSize = gc.getCourses().getWebAutomation().size();
-		int apiSize = gc.getCourses().getApi().size();
-		
-		ArrayList<String> actualList = new ArrayList<String>();
-		for(int i =0; i<autoSize; i++) {
-		String gcourseTitle = gc.getCourses().getWebAutomation().get(i).getCourseTitle();
-		actualList.add(gcourseTitle);
-		if(gcourseTitle.contentEquals("Protractor")) {
-			String gcourseprice = gc.getCourses().getWebAutomation().get(i).getPrice();
-			System.out.println("Course price of " +gcourseTitle +" is " + gcourseprice);
-		}
-		}
-		
-		for(int i =0; i<apiSize; i++) {
-			String gcourseTitle = gc.getCourses().getApi().get(i).getCourseTitle();
-			System.out.println(gcourseTitle);
-			if(gcourseTitle.contentEquals("SoapUI Webservices testing")) {
-				String gcourseprice = gc.getCourses().getWebAutomation().get(i).getPrice();
-				System.out.println("Course price of " +gcourseTitle +" is " + gcourseprice);
-			}
-			}
-		
-		String[] e = {"Selenium Webdriver Java","Cypress","Protractor"};
-		List<String> expectedList = Arrays.asList(e);
-		
-		Assert.assertTrue(actualList.equals(expectedList),"Web automation list are matching");
-		 
-		
+			
 	}
 
 }

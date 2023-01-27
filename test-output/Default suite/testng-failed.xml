@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="jiraAPI.getIssue">
+      <class name="reqRespSpec.reqres">
         <methods>
-          <include name="getIssued"/>
+          <include name="getpla"/>
         </methods>
-      </class> <!-- jiraAPI.getIssue -->
+      </class> <!-- reqRespSpec.reqres -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

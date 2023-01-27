@@ -1,6 +1,6 @@
-package Authentication;
+package Deserialization_Authentication;
 
-public class webAutomationPOJO {
+public class mobilePOJO {
 
 	private  String courseTitle;
 	private  String price;
@@ -17,9 +17,7 @@ public class webAutomationPOJO {
 	public void setPrice(String price) {
 		this.price = price;
 	}
-	
-	
-	
+
 	
 	
 	

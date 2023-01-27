@@ -1,41 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-25T11:59:45 EST" name="Suite" finished-at="2023-01-25T11:59:50 EST" duration-ms="5602">
+  <suite started-at="2023-01-27T18:28:58 EST" name="Default suite" finished-at="2023-01-27T18:29:05 EST" duration-ms="6374">
     <groups>
     </groups>
-    <test started-at="2023-01-25T11:59:45 EST" name="Test" finished-at="2023-01-25T11:59:50 EST" duration-ms="5602">
-      <class name="jiraAPI.attachment">
-        <test-method signature="attachmentd()[pri:0, instance:jiraAPI.attachment@5d0a1059]" started-at="2023-01-25T11:59:50 EST" name="attachmentd" finished-at="2023-01-25T11:59:50 EST" duration-ms="233" status="PASS">
+    <test started-at="2023-01-27T18:28:58 EST" name="Default test" finished-at="2023-01-27T18:29:05 EST" duration-ms="6374">
+      <class name="reqRespSpec.reqres">
+        <test-method signature="addplace()[pri:1, instance:reqRespSpec.reqres@78e4deb0]" started-at="2023-01-27T18:28:58 EST" name="addplace" finished-at="2023-01-27T18:29:02 EST" duration-ms="3568" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- attachmentd -->
-      </class> <!-- jiraAPI.attachment -->
-      <class name="jiraAPI.createIssue">
-        <test-method signature="issueCreation()[pri:0, instance:jiraAPI.createIssue@43dac38f]" started-at="2023-01-25T11:59:48 EST" name="issueCreation" finished-at="2023-01-25T11:59:50 EST" duration-ms="1571" status="PASS">
+        </test-method> <!-- addplace -->
+        <test-method signature="updatepla()[pri:2, instance:reqRespSpec.reqres@78e4deb0]" started-at="2023-01-27T18:29:02 EST" name="updatepla" finished-at="2023-01-27T18:29:03 EST" duration-ms="1553" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- issueCreation -->
-      </class> <!-- jiraAPI.createIssue -->
-      <class name="jiraAPI.editIssue">
-        <test-method signature="editIssued()[pri:0, instance:jiraAPI.editIssue@342c38f8]" started-at="2023-01-25T11:59:50 EST" name="editIssued" finished-at="2023-01-25T11:59:50 EST" duration-ms="160" status="PASS">
+        </test-method> <!-- updatepla -->
+        <test-method signature="getpla()[pri:3, instance:reqRespSpec.reqres@78e4deb0]" started-at="2023-01-27T18:29:03 EST" name="getpla" finished-at="2023-01-27T18:29:05 EST" duration-ms="1174" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editIssued -->
-      </class> <!-- jiraAPI.editIssue -->
-      <class name="jiraAPI.cookieAuth">
-        <test-method signature="session()[pri:0, instance:jiraAPI.cookieAuth@4fb3ee4e]" started-at="2023-01-25T11:59:45 EST" name="session" finished-at="2023-01-25T11:59:48 EST" duration-ms="3412" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- session -->
-      </class> <!-- jiraAPI.cookieAuth -->
-      <class name="jiraAPI.getIssue">
-        <test-method signature="getIssued()[pri:0, instance:jiraAPI.getIssue@c88a337]" started-at="2023-01-25T11:59:50 EST" name="getIssued" finished-at="2023-01-25T11:59:50 EST" duration-ms="93" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getIssued -->
-      </class> <!-- jiraAPI.getIssue -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- getpla -->
+      </class> <!-- reqRespSpec.reqres -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -1,9 +1,10 @@
-package Authentication;
+package Deserialization_Authentication;
 
-public class mobilePOJO {
+public class apiPOJO {
 
 	private  String courseTitle;
 	private  String price;
+	
 	
 	public String getCourseTitle() {
 		return courseTitle;
@@ -18,6 +19,8 @@ public class mobilePOJO {
 		this.price = price;
 	}
 
+
+	}
 	
 	
 	
@@ -28,5 +31,4 @@ public class mobilePOJO {
 	
 	
 	
-	
-}
+

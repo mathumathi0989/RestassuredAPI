@@ -1,10 +1,9 @@
-package Authentication;
+package Deserialization_Authentication;
 
-public class apiPOJO {
+public class webAutomationPOJO {
 
 	private  String courseTitle;
 	private  String price;
-	
 	
 	public String getCourseTitle() {
 		return courseTitle;
@@ -18,9 +17,6 @@ public class apiPOJO {
 	public void setPrice(String price) {
 		this.price = price;
 	}
-
-
-	}
 	
 	
 	
@@ -31,4 +27,8 @@ public class apiPOJO {
 	
 	
 	
-
+	
+	
+	
+	
+}

@@ -4,8 +4,8 @@ import restAssured.API.basic;
 
 public class payload {
 
-		static String name = "Mathumathi";
-		public static String updatedaddress = "64 Avenue E, Bayonne, NJ";
+		static String name = "MathumathiBala";
+		public static String updatedaddress = "Avenue E, Bayonne, NJ";
 		
 		public static String addplace() {
 			return "{\r\n"
@@ -16,7 +16,7 @@ public class payload {
 					+ "  \"accuracy\": 50,\r\n"
 					+ "  \"name\": \" " +name + "\",\r\n"
 					+ "  \"phone_number\": \"(+91) 983 893 3937\",\r\n"
-					+ "  \"address\": \"29, side layout, cohen 09\",\r\n"
+					+ "  \"address\": \"29, sie layout, cohen 09\",\r\n"
 					+ "  \"types\": [\r\n"
 					+ "    \"shoe park\",\r\n"
 					+ "    \"shop\"\r\n"
