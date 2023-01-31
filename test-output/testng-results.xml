@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-27T18:28:58 EST" name="Default suite" finished-at="2023-01-27T18:29:05 EST" duration-ms="6374">
+  <suite started-at="2023-01-30T21:44:22 EST" name="Default suite" finished-at="2023-01-30T21:44:26 EST" duration-ms="3974">
     <groups>
     </groups>
-    <test started-at="2023-01-27T18:28:58 EST" name="Default test" finished-at="2023-01-27T18:29:05 EST" duration-ms="6374">
-      <class name="reqRespSpec.reqres">
-        <test-method signature="addplace()[pri:1, instance:reqRespSpec.reqres@78e4deb0]" started-at="2023-01-27T18:28:58 EST" name="addplace" finished-at="2023-01-27T18:29:02 EST" duration-ms="3568" status="PASS">
+    <test started-at="2023-01-30T21:44:22 EST" name="Default test" finished-at="2023-01-30T21:44:26 EST" duration-ms="3974">
+      <class name="API_E2E.login">
+        <test-method signature="loginTC()[pri:0, instance:API_E2E.login@6892b3b6]" started-at="2023-01-30T21:44:22 EST" name="loginTC" finished-at="2023-01-30T21:44:26 EST" duration-ms="3902" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addplace -->
-        <test-method signature="updatepla()[pri:2, instance:reqRespSpec.reqres@78e4deb0]" started-at="2023-01-27T18:29:02 EST" name="updatepla" finished-at="2023-01-27T18:29:03 EST" duration-ms="1553" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updatepla -->
-        <test-method signature="getpla()[pri:3, instance:reqRespSpec.reqres@78e4deb0]" started-at="2023-01-27T18:29:03 EST" name="getpla" finished-at="2023-01-27T18:29:05 EST" duration-ms="1174" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getpla -->
-      </class> <!-- reqRespSpec.reqres -->
+        </test-method> <!-- loginTC -->
+      </class> <!-- API_E2E.login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

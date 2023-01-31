@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="reqRespSpec.reqres">
+      <class name="API_E2E.login">
         <methods>
-          <include name="getpla"/>
+          <include name="loginTC"/>
         </methods>
-      </class> <!-- reqRespSpec.reqres -->
+      </class> <!-- API_E2E.login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
