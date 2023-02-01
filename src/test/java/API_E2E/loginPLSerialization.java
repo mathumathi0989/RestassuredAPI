@@ -1,10 +1,11 @@
 package API_E2E;
 
-public class loginPayload {
+public class loginPLSerialization {
 
 	private String userEmail;
 	private String userPassword;
 	
+
 	public String getUserEmail() {
 		return userEmail;
 	}
